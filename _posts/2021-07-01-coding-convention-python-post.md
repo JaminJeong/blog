@@ -1,6 +1,6 @@
 ---
-title: "python codinn convention"
+title: "python coding convention"
 date: 2021-07-01 01:01:01 -0400
-categories: python update
+categories: python coding-convention
 ---
 
