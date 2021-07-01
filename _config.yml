@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "kr-KO"
-title                    : "개발자 노드"
+title                    : "개발자 노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "정자민 (Jamin Jeong)"
