@@ -84,7 +84,7 @@ No:
     print(data)
     ('test', [1, 2, 3, 'test', 4, 5], 'This is a string!', {'gender': 'F', 'age': 23})
  
-    self.logger.info("{'gender': 'F', 'age': 23}")
+    logger.info("{'gender': 'F', 'age': 23}")
 Yes:
     import pprint
     data = ("test", [1, 2, 3,'test', 4, 5], "This is a string!",
@@ -96,7 +96,7 @@ Yes:
      {'age': 23, 'gender': 'F'})
  
     from pprint import pformat
-    self.logger.info(pformat("{'gender': 'F', 'age': 23}"))
+    logger.info(pformat("{'gender': 'F', 'age': 23}"))
 ```
 
 ## for loop 보다는 map, filter를 쓰자 
