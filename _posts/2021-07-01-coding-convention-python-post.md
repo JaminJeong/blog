@@ -33,6 +33,7 @@ Yes:
 ## open보다 pathlib의 read write를 쓰자
 * open을 사용하여 file descriptor를 종료 하기 애매할수 있는 문제가 없고 직관적이다
 * with를 사용해도 되지만 이 방법이 더 좋은 거 같음.
+
 ```python
 No:
     with open(fpath, 'r') as f:
@@ -50,6 +51,7 @@ Yes:
 ## format이나 %s보다 f"" f-string을 쓰자
 * f-string이 제일 빠르다
 * 출처: https://bluese05.tistory.com/70
+
 ```python
 No:
     test = "test"
@@ -73,6 +75,7 @@ Yes:
 ## print 보다 pprint를 쓰자 (복잡한 log는 pformat 쓰자)
 * 복잡한 포멧에서 출력을 보기 편하게 함.
 * 출처 : https://www.programmersought.com/article/2697394940/
+
 ```python
 No:
     data = ("test", [1, 2, 3,'test', 4, 5], "This is a string!",
@@ -177,9 +180,10 @@ Yes:
     """
 ```
 
-__doc__을 사용할 수 있도록 주석은 자세히 써 주자
-이후에 API 형태의 문서화를 할때 유리하고
-사용자에게 바로 어떤 일을 하는 함수 인지 jupyter나 ipython 콘솔에서 알려 줄 수 있어 직관적이다
+## __doc__을 사용할 수 있도록 주석은 자세히 써 주자
+* 이후에 API 형태의 문서화를 할때 유리하고
+* 사용자에게 바로 어떤 일을 하는 함수 인지 jupyter나 ipython 콘솔에서 알려 줄 수 있어 직관적이다
+
 ```python
 class Path:
     def __init__(self):
