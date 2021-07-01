@@ -47,9 +47,9 @@ Yes:
     byte_data = Path(fpath).read_bytes()
 ```
 
-format이나 %s보다 f"" f-string을 쓰자
-f-string이 제일 빠르다
-출처: https://bluese05.tistory.com/70
+## format이나 %s보다 f"" f-string을 쓰자
+* f-string이 제일 빠르다
+* 출처: https://bluese05.tistory.com/70
 ```python
 No:
     test = "test"
@@ -70,9 +70,9 @@ Yes:
      >>> '2019-05-11 is on a Saturday'
 ```
 
-print 보다 pprint를 쓰자 (복잡한 log는 pformat 쓰자)
-복잡한 포멧에서 출력을 보기 편하게 함.
-출처 : https://www.programmersought.com/article/2697394940/
+## print 보다 pprint를 쓰자 (복잡한 log는 pformat 쓰자)
+* 복잡한 포멧에서 출력을 보기 편하게 함.
+* 출처 : https://www.programmersought.com/article/2697394940/
 ```python
 No:
     data = ("test", [1, 2, 3,'test', 4, 5], "This is a string!",
@@ -95,12 +95,12 @@ Yes:
     self.logger.info(pformat("{'gender': 'F', 'age': 23}"))
 ```
 
-for loop 보다는 map, filter를 쓰자 
-속도가 차이가 남.
+## for loop 보다는 map, filter를 쓰자 
+* 속도가 차이가 남.
 
 
-if elif else 보다는 return continue break를 사용하여 들여쓰기를 아끼자
-tab이 한없이 길어 지는 걸 피하고 코드 흐림이 더 쉬워짐.
+## if elif else 보다는 return continue break를 사용하여 들여쓰기를 아끼자
+* tab이 한없이 길어 지는 걸 피하고 코드 흐림이 더 쉬워짐.
 
 ```python
 No:
@@ -129,10 +129,10 @@ Yes:
         do_end_something()
 ```
 
-getopt보다 argparse를 쓰자
-for 루프 같은 것을 돌지 않아도 됨
-help를 따로 만들지 않고 직강제적으로 생성하게 할 수 있음.
-https://www.python.org/dev/peps/pep-0389/
+## getopt보다 argparse를 쓰자
+* for 루프 같은 것을 돌지 않아도 됨
+* help를 따로 만들지 않고 직강제적으로 생성하게 할 수 있음.
+* https://www.python.org/dev/peps/pep-0389/
 
 ```python
 No:
@@ -159,9 +159,9 @@ Yes:
     output_path = args.OUTPUTP
 ```
 
-문자열이 개행이 되면 ", \ 보다 """를 쓰자
-\ 를 넣어야 하는 실수를 원천적으로 차단할 수 있음.
-f-string과 함께 여러 행으로 나눠서 가독성을 높일 수 있음.
+## 문자열이 개행이 되면 ", \ 보다 """를 쓰자
+* \ 를 넣어야 하는 실수를 원천적으로 차단할 수 있음.
+* f-string과 함께 여러 행으로 나눠서 가독성을 높일 수 있음.
 
 ```python
 No:
@@ -204,11 +204,11 @@ In [5]: pprint.pprint(Path.__doc__)
 '    ')
 ```
 
-가능하면 입력 인자와 출력 인자의 type을 명시해 주자
-python, java script의 경우 c++, java 와 같이 데이터 타입을 선언하는 부분이 없다
-직관적으로 입력 출력 되는 인자의 정보가 없고 주석이 없다면 더욱 알기가 힘들다
-입력이나 출력인자를 정해 놓으면 다른 타입이라도 python이 casting하려는 시도를 하게 되고 잘못된 사용을 할때 인터프리터가 알아 차릴 수 있다
-__str__() 같은 operator가 동작하게 할수 있음.
+## 가능하면 입력 인자와 출력 인자의 type을 명시해 주자
+* python, java script의 경우 c++, java 와 같이 데이터 타입을 선언하는 부분이 없다
+* 직관적으로 입력 출력 되는 인자의 정보가 없고 주석이 없다면 더욱 알기가 힘들다
+* 입력이나 출력인자를 정해 놓으면 다른 타입이라도 python이 casting하려는 시도를 하게 되고 잘못된 사용을 할때 인터프리터가 알아 차릴 수 있다
+   - __str__() 같은 operator가 동작하게 할수 있음.
 
 ```python
 No:
