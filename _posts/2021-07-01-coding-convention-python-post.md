@@ -21,6 +21,7 @@ categories: python coding-convention
 ## os.path 보다 pathlib 을 쓰자
 * 연산자를 사용할 수 있어서 더욱 직관적이다
 * 를 빠트려 코드에서 에러가 생길 수 없다
+* 참고 : https://docs.python.org/ko/3/library/pathlib.html
 
 ```python
 No:
