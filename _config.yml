@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "kr-KO"
-title                    : "개발자 노트"
+title                    : "내가 볼려고 만든 개발자 노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "정자민 (Jamin Jeong)"
-description              : "연구하고 개발한 내용을 정리합니다"
+description              : "연구한 내용, 개발한 내용들 기억에서 안 지워지게 기록합니다"
 url                      : https://jaminjeong.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : /blog # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
