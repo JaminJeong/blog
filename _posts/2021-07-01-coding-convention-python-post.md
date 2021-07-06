@@ -51,6 +51,8 @@ Yes:
 
 ## format이나 %s보다 f"" f-string을 쓰자
 * f-string이 제일 빠르다
+* flynt 를 이용해서 자동으로 변경할 수 있음 
+  - https://pypi.org/project/flynt/
 * 출처: https://bluese05.tistory.com/70
 
 ```python
@@ -101,7 +103,29 @@ Yes:
 
 ## for loop 보다는 map, filter를 쓰자 
 * 속도가 차이가 남.
-
+```python
+No:
+    def add_1(n):
+          return n + 1
+ 
+    target = [1, 2, 3, 4, 5]
+    result = []
+    for value in target:
+         result.append(add_1(value))
+ 
+    print(result) # 출력결과 : [2, 3, 4, 5, 6]
+ 
+Yes:
+    def add_1(n):
+          return n + 1
+    target = [1, 2, 3, 4, 5]
+    result = map(add_1, target)
+    print(list(result))
+ 
+    target = [1, 2, 3, 4, 5]
+    result = map(lambda x : x+1, target)
+    print(list(result))
+```
 
 ## if elif else 보다는 return continue break를 사용하여 들여쓰기를 아끼자
 * tab이 한없이 길어 지는 걸 피하고 코드 흐림이 더 쉬워짐.
@@ -164,7 +188,6 @@ Yes:
 ```
 
 ## 문자열이 개행이 되면 ", \ 보다 """를 쓰자
-* \ 를 넣어야 하는 실수를 원천적으로 차단할 수 있음.
 * f-string과 함께 여러 행으로 나눠서 가독성을 높일 수 있음.
 
 ```python
@@ -175,9 +198,9 @@ No:
  
 Yes:
     msg_str = """
-    company : {company} \n
-    department : {department} \n
-    age : {age} \n
+    company : {company} 
+    department : {department} 
+    age : {age} 
     """
 ```
 
