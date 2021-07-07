@@ -101,8 +101,8 @@ Yes:
     logger.info(pformat("{'gender': 'F', 'age': 23}"))
 ```
 
-## for loop 보다는 map, filter를 쓰자 
-* 속도가 차이가 남.
+## for loop 보다는 map, filter를 쓰자
+ * 속도가 차이가 남.
 
 ```python
 No:
@@ -126,8 +126,8 @@ Yes:
     target = [1, 2, 3, 4, 5]
     result = map(lambda x : x+1, target)
     print(list(result))
+    
 ```
-
 
 ## if elif else 보다는 return continue break를 사용하여 들여쓰기를 아끼자
 * tab이 한없이 길어 지는 걸 피하고 코드 흐림이 더 쉬워짐.
