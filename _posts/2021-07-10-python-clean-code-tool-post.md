@@ -1,9 +1,3 @@
----
-title: "python clean code tool"
-date: 2021-07-01 01:01:01 -0400
-categories: python clean-code 
----
-
 # python 코드 정리
 ## IDE 자동 코드 정리 
  * pycharm →ctrl+alt+shift+L :리포멧,자동정렬
