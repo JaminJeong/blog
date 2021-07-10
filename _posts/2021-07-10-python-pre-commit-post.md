@@ -6,6 +6,8 @@ categories: python git pre-commit
 
 ## 목적
 Git의 pre-commit 은 commit 하기 전에 원하는 동작을 실행해 주는 훌륭한 도구입니다 
+Python의 경우 필요하다고 판단되는 도구들을 정리해 봤습니다
+
 ## 출처
  * 블로그
    - http://snowdeer.github.io/git/2021/04/27/use-git-pre-commit/
