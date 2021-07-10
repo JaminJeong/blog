@@ -13,14 +13,14 @@ categories: python cleancode
 ### isort
  * 설치 : pip install isort
  * 사용법 : isort test.py
- * https://pypi.org/project/isort/
+ * <https://pypi.org/project/isort/>
 
 ## 사용하지 않는 import 모듈과 변수 정리
 ### autoflake
  * 설치 : pip install autoflake
  * 사용법 : autoflake --in-place --remove-unused-variables Example.py ← 불필요한 import 모듈 삭제와 불필요한 변수 삭제
  * 사용법 : autoflake --in-place Example.py ← 불필요한 import 모듈만 삭제
- * https://python.plainenglish.io/autoflake-remove-unused-imports-unused-variables-from-python-code-4774c1117099
+ * <https://python.plainenglish.io/autoflake-remove-unused-imports-unused-variables-from-python-code-4774c1117099>
  * git을 이용하여 정렬 및 코드 내용 확인 후 push 
 
 ## f-string 변환
@@ -28,7 +28,7 @@ categories: python cleancode
  * 설치 : pip install flynt
  * 사용법 : autoflake ./
  * 사용법 : autoflake ./test.py
- * https://github.com/ikamensh/flynt
+ * <https://github.com/ikamensh/flynt>
  * "{}".format(test) → f"{test}" 변환
 
 ## 코드 자동 정렬
@@ -36,8 +36,8 @@ categories: python cleancode
  * 설치 : pip install git+git://github.com/psf/black
  * 사용법 : black ./
  * 사용법 : black ./test.py
- * https://github.com/psf/black
- * python 코드 정렬 기준 (https://www.python.org/dev/peps/) 에 따라 자동 정렬
+ * <https://github.com/psf/black>
+ * python 코드 정렬 기준 (<https://www.python.org/dev/peps/>) 에 따라 자동 정렬
 
 # Crontab을 이용한 자동정렬 업데이트
 ### crontab
