@@ -1,11 +1,7 @@
 ---
-layout: post
 title: "python 코드 정렬 tool 사용하기"
-excerpt: "python으로 자동화된 코드 정렬 tool 사용하기"
-tags: [python, cleancode]
-modified: 2021-07-10
-comments: true
-category : python cleancode
+date: 2021-07-10 17:13:00 -0400
+categories: python cleancode
 ---
 
 # python 코드 정리
