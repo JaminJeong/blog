@@ -10,10 +10,10 @@ Python의 경우 필요하다고 판단되는 도구들을 정리해 봤습니�
 
 ## 출처
  * 블로그
-   - http://snowdeer.github.io/git/2021/04/27/use-git-pre-commit/
-   - https://www.daleseo.com/pre-commit/
+   - <http://snowdeer.github.io/git/2021/04/27/use-git-pre-commit/>
+   - <https://www.daleseo.com/pre-commit/>
  * 제공되는 hook
-   - https://pre-commit.com/hooks.html
+   - <https://pre-commit.com/hooks.html>
 
 ## 설치
  * pip install pre-commit
