@@ -1,3 +1,13 @@
+---
+layout: post
+title: python 코드 정렬 tool 사용하기
+excerpt: "python으로 자동화된 코드 정렬 tool 사용하기"
+tags: [python, cleancode]
+modified: 2021-07-10
+comments: true
+category : python cleancode
+---
+
 # python 코드 정리
 ## IDE 자동 코드 정리 
  * pycharm →ctrl+alt+shift+L :리포멧,자동정렬
