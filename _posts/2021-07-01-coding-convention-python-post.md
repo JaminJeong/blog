@@ -14,14 +14,14 @@ categories: python coding-convention
 * 누가 작성한지 모르게 개성이 없으며 (통일)
 * 선진화 되고 효율적 코드 작성
 ## 가이드
-* 영문 : https://www.python.org/dev/peps/pep-0008/
-* 한글 : https://wikidocs.net/7896
-* zen of python : https://wikidocs.net/7907
+* 영문 : <https://www.python.org/dev/peps/pep-0008>
+* 한글 : <https://wikidocs.net/7896>
+* zen of python : <https://wikidocs.net/7907>
 
 ## os.path 보다 pathlib 을 쓰자
 * 연산자를 사용할 수 있어서 더욱 직관적이다
 * 를 빠트려 코드에서 에러가 생길 수 없다
-* 참고 : https://docs.python.org/ko/3/library/pathlib.html
+* 참고 : <https://docs.python.org/ko/3/library/pathlib.html>
 
 ```python
 No:
@@ -52,8 +52,8 @@ Yes:
 ## format이나 %s보다 f"" f-string을 쓰자
 * f-string이 제일 빠르다
 * flynt 를 이용해서 자동으로 변경할 수 있음 
-  - https://pypi.org/project/flynt/
-* 출처: https://bluese05.tistory.com/70
+  - <https://pypi.org/project/flynt/>
+* 출처: <https://bluese05.tistory.com/70>
 
 ```python
 No:
@@ -77,7 +77,7 @@ Yes:
 
 ## print 보다 pprint를 쓰자 (복잡한 log는 pformat 쓰자)
 * 복잡한 포멧에서 출력을 보기 편하게 함.
-* 출처 : https://www.programmersought.com/article/2697394940/
+* 출처 : <https://www.programmersought.com/article/2697394940/>
 
 ```python
 No:
@@ -162,7 +162,7 @@ Yes:
 ## getopt보다 argparse를 쓰자
 * for 루프 같은 것을 돌지 않아도 됨
 * help를 따로 만들지 않고 직강제적으로 생성하게 할 수 있음.
-* https://www.python.org/dev/peps/pep-0389/
+* <https://www.python.org/dev/peps/pep-0389/>
 
 ```python
 No:
