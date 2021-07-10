@@ -1,7 +1,11 @@
 ---
-title: "python coding convention"
-date: 2021-07-01 01:01:01 -0400
-categories: python coding-convention
+layout: post
+title: python coding convention
+excerpt: "python coding convention"
+tags: [python, coding-convention]
+modified: 2021-07-01
+comments: true
+category : python coding-convention
 ---
 
 # Python 언어에서 가장 중요한 점?
