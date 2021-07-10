@@ -4,19 +4,16 @@ date: 2021-07-01 01:01:01 -0400
 categories: python clean-code 
 ---
 
-
 # python 코드 정리
 ## IDE 자동 코드 정리 
  * pycharm →ctrl+alt+shift+L :리포멧,자동정렬
  * visual studio code → ctrl+K+F
-
 
 ## import 모듈 정리
 ### isort
  * 설치 : pip install isort
  * 사용법 : isort test.py
  * https://pypi.org/project/isort/
-
 
 ## 사용하지 않는 import 모듈과 변수 정리
 ### autoflake
@@ -26,7 +23,6 @@ categories: python clean-code
  * https://python.plainenglish.io/autoflake-remove-unused-imports-unused-variables-from-python-code-4774c1117099
  * git을 이용하여 정렬 및 코드 내용 확인 후 push 
 
-
 ## f-string 변환
 ### flynt
  * 설치 : pip install flynt
@@ -34,7 +30,6 @@ categories: python clean-code
  * 사용법 : autoflake ./test.py
  * https://github.com/ikamensh/flynt
  * "{}".format(test) → f"{test}" 변환
-
 
 ## 코드 자동 정렬
 ### black
@@ -48,14 +43,12 @@ categories: python clean-code
 ### crontab
  * 새벽 4시 마다 동작함.
 
-
 ```bash
 0 4 * * * bash /your/git/folder/clean_code.sh /your/git/folder/
 ```
 
 ### 자동 shell code
  * clean_code.sh
-
 
 ```bash
 target_dir="$1"
