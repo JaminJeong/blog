@@ -1,3 +1,9 @@
+---
+title: "docker"
+date: 2022-12-22 00:00:00 -0000
+categories: docker gpu
+---
+
 # Dockerfile.gpu
 - [docker hub](https://hub.docker.com) 에 올라와 있는 official한 기본 저장소를 베이스로 하는 것이 좋다
 

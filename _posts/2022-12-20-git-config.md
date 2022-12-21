@@ -1,3 +1,9 @@
+---
+title: "git"
+date: 2022-12-22 00:00:00 -0000
+categories: git 
+---
+
 # 목차
 - [git의 설정 파일](#git-------)
 - [global 설정](#global---)

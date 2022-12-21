@@ -1,3 +1,9 @@
+---
+title: "docker"
+date: 2022-12-22 00:00:00 -0000
+categories: docker jupyter
+---
+
 # Docker Jupyter-notebook 사용법
 
 - Docker를 이용, Jupyter editor를 사용하는 방법입니다.

@@ -1,3 +1,9 @@
+---
+title: "docker compose"
+date: 2022-12-22 00:00:00 -0000
+categories: docker docker-compose
+---
+
 # why? docker-compose?
 - docker run의 경우 아래와 같이 어떤 shell 파일로 관리를 해야하는 불편함이 있고
 - 사용자는 어떤 파일을 실행해야 컨테이너를 실행 할 수 있을지 알수 없다. 

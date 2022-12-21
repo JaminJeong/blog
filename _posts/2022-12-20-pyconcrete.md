@@ -1,3 +1,9 @@
+---
+title: "Pyconcrete"
+date: 2022-12-22 00:00:00 -0000
+categories: Pyconcrete
+---
+
 # Pyconcrete
 - pyconcrete는 python 소스를 암호화 해주는 툴이다
 - 파이썬을 실행하거나 빌드 할때 생성되는 .pyc 파일을 .pye 파일로 변환하여 암호화된 실행 환경을 제공한다

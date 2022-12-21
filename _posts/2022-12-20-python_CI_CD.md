@@ -1,3 +1,9 @@
+---
+title: "python"
+date: 2022-12-22 00:00:00 -0000
+categories: python ci/cd gitlab
+---
+
 # python CI/CD
 - 다양한 역할을 수행하게 된다
   - test build

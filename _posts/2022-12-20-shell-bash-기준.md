@@ -1,3 +1,9 @@
+---
+title: "shell command"
+date: 2022-12-22 00:00:00 -0000
+categories: shell command ubuntu
+---
+
 # Linux 명령어 tips
 * 자세한 내용은 --help, man page 혹은 인터넷 검색을 이용하자
 
