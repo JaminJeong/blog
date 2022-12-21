@@ -7,40 +7,6 @@ categories: shell command ubuntu
 # Linux 명령어 tips
 * 자세한 내용은 --help, man page 혹은 인터넷 검색을 이용하자
 
-# 목차
-- [접속](#--)
-  * [ssh](#ssh)
-    + [ssh-copy-id](#ssh-copy-id)
-    + [ssh-keygen](#ssh-keygen)
-- [서버간 복사](#------)
-  * [scp](#scp)
-  * [rsync](#rsync)
-- [서버간 파일 공유](#---------)
-  * [sshfs](#sshfs)
-- [시스템 상태 보기](#---------)
-  * [htop](#htop)
-  * [nvidia-smi](#nvidia-smi)
-  * [lshw](#lshw)
-  * [watch](#watch)
-- [기타](#--)
-  * [awk](#awk)
-  * [sed](#sed)
-  * [grep](#grep)
-  * [less](#less)
-  * [find](#find)
-  * [which](#which)
-  * [ps](#ps)
-  * [kill](#kill)
-  * [history](#history)
-    + [설치](#--)
-    + [사용](#--)
-  * [tree](#tree)
-  * [head](#head)
-  * [tail](#tail)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 
 # 접속
 

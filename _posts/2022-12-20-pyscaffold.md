@@ -4,17 +4,6 @@ date: 2022-12-22 00:00:00 -0000
 categories: pyscaffold
 ---
 
-# 목차
-
-- [installation](#installation)
-  * [basic installation](#basic-installation)
-  * [optional installation](#optional-installation)
-  * [create projects](#create-projects)
-- [install package](#install-package)
-- [reference](#reference)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 # installation
 ## basic installation 
 ```bash

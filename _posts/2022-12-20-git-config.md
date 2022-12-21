@@ -4,15 +4,6 @@ date: 2022-12-22 00:00:00 -0000
 categories: git 
 ---
 
-# 목차
-- [git의 설정 파일](#git-------)
-- [global 설정](#global---)
-  * [commit 을 위한 user 계정 설정](#commit------user------)
-  * [에디터 설정](#------)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 # git의 설정 파일
 - 각각의 저장소 마다 설정 파일이 있다.
 - 아래는 stylegan2의 예제이다.
