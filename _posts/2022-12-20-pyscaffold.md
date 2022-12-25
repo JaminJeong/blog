@@ -19,6 +19,7 @@ $ pip install pyscaffoldext-markdown
 
 ## create projects
   - 기본적으로 우리 모두는 rst 파일에 익숙하지 않기 때문에 --markdown 옵션을 넣어서 생성해야 한다.
+
 ```bash
 $ putup my_project
 
@@ -29,11 +30,13 @@ $ putup -i my_project
 ## pyscaffoldext-markdown 패키지가 설치 되어 있어야 한다
 $ putup my_project --markdown
 ```
+
   - 나머지 생성법은 [pyscaffold](https://pyscaffold.org/en/stable/usage.html) 여기를 참조하자.
 
 - 생성된 my_project 폴더 구조는 아래와 같다
 - docs 폴더와 src 폴더가 생성되었다. 우리가 만드는 소스는 src에 저장한다.
 - setup.py와 setup.cfg 파일을 수정하여 패키지와 하자 (해당 부분은 이후 추가 예정)
+
 ```bash
 $ cd my_project
 $ tree
@@ -171,6 +174,7 @@ docs
 ```
 
 ## build
+
 - 패키지를 build 하여 dist 폴더에 whl 설치 파일을 생성한다. 
 ```bash
 $ tox -e build  # to build your package distribution
@@ -181,6 +185,7 @@ dist
 ├── test1-0.0.post1.dev1+g68ff46f-py3-none-any.whl
 └── test1-0.0.post1.dev1+g68ff46f.tar.gz
 ```
+
 - 아래와 동작이 동일하다 
 ```bash
 $ python setup.py bdist_wheel
@@ -189,6 +194,7 @@ $ python setup.py bdist_wheel
 ## publish
 - 설정 파일에 GitHub 주소(pypi)로 만든 패키지와 문서를 배포 한다.
 - 해당 pypi 저장소는 setup.cfg에서 url을 수정해 줘야 함. <= 차후 업데이트
+
 ```bash
 $ tox -e publish  # to test your project uploads correctly in test.pypi.org
 $ tox -e publish -- --repository pypi  # to release your package to PyPI
