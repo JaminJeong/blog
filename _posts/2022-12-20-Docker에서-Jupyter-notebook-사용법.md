@@ -241,15 +241,15 @@ device_lib.list_local_devices()
 >
 > `Node/NIPA내 nvidia-smi`
 >
-> ![스크린샷_2022-05-26_17.15.37](uploads/04b0d9bd0432a4059c716a1960eabaa2/스크린샷_2022-05-26_17.15.37.png)
+> ![스크린샷_2022-05-26_17.15.37](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/04b0d9bd0432a4059c716a1960eabaa2/스크린샷_2022-05-26_17.15.37.png)
 >
 > `Jupyter Notebook > GPU 1 설정`
 >
-> ![스크린샷_2022-05-26_17.08.57](uploads/81e7296ebf5df4d28e23495da72389e4/스크린샷_2022-05-26_17.08.57.png)
+> ![스크린샷_2022-05-26_17.08.57](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/81e7296ebf5df4d28e23495da72389e4/스크린샷_2022-05-26_17.08.57.png)
 >
 > `Terminal (CMD) `
 >
->![스크린샷_2022-05-26_17.11.13](uploads/20f5bd008b3c82fa3007d34d4ea03343/스크린샷_2022-05-26_17.11.13.png)
+>![스크린샷_2022-05-26_17.11.13](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/20f5bd008b3c82fa3007d34d4ea03343/스크린샷_2022-05-26_17.11.13.png)
 >
 
 ## 4. Jupyter Notebook 보단 Jupyter Lab을 원한다면
@@ -262,7 +262,7 @@ device_lib.list_local_devices()
 
 * `pip list | grep jupyter` 로 `jupyterlab`이 설치되었는지 확인한다.
 
->![스크린샷_2022-06-02_09.27.37](uploads/0c946a532a2ee207f04d6456f52fdf07/스크린샷_2022-06-02_09.27.37.png)
+>![스크린샷_2022-06-02_09.27.37](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/0c946a532a2ee207f04d6456f52fdf07/스크린샷_2022-06-02_09.27.37.png)
 
 #### 2. Jupyter Lab 실행
 

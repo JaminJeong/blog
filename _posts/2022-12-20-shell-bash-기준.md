@@ -113,13 +113,13 @@ $ sshfs -o reconnect user@x.x.x.x:/data /home/user/data
 ```bash
 $ htop
 ```
-![SCR-20220516-mal](uploads/5482017697ea99572f0e7ce32d40995c/SCR-20220516-mal.png)
+![SCR-20220516-mal](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/5482017697ea99572f0e7ce32d40995c/SCR-20220516-mal.png)
 
 ## nvidia-smi
 ```bash
 $ nvidia-smi
 ```
-![스크린샷_2022-05-16_오후_4.06.02](uploads/f27ea361b9512860d608c1f0f972053f/스크린샷_2022-05-16_오후_4.06.02.png)
+![스크린샷_2022-05-16_오후_4.06.02](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/f27ea361b9512860d608c1f0f972053f/스크린샷_2022-05-16_오후_4.06.02.png)
 
 ## lshw
 * 해당 머신의 하드웨어 스펙을 볼수 있다. 
@@ -251,7 +251,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ### 사용
 * ctrl + r
 
-![스크린샷_2022-05-17_오전_10.38.52](uploads/8e933dfc887bb8d380ac74230b560a0a/스크린샷_2022-05-17_오전_10.38.52.png)
+![스크린샷_2022-05-17_오전_10.38.52](https://raw.githubusercontent.com/JaminJeong/blog/main/_posts/uploads/8e933dfc887bb8d380ac74230b560a0a/스크린샷_2022-05-17_오전_10.38.52.png)
 
 ## tree
 ```bash
