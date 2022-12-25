@@ -45,14 +45,14 @@ RUN rm -rf /workspace/.git* Dockerfile
 ```
 
 # Install
-```bash 
+```bash
 $ PYCONCRETE_PASSPHRASE=<your passphrase here> pip install pyconcrete
 $ pip install pyconcrete --egg --install-option="--passphrase=<your passphrase>"
 ```
 
 # Usage
 - .py 파일들을 .pye 파일로 변환한다
-```bash 
+```bash
 $ pyconcrete-admin.py compile --source=<your py script>  --pye
 $ pyconcrete-admin.py compile --source=<your py module dir> --pye
 ```

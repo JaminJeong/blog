@@ -14,7 +14,7 @@ categories: shell command ubuntu
 ### ssh-copy-id
 * 접속할 때마다 키를 입력할 필요없이 키를 복사하여 저장함. 최초 한번 복사후 이후는 암호 없이 접속 가능함.
 * ssh키 동기화 서비스를 이용하면 모든 서버에 암호입력 없이 접속 할 수 있도록 셋팅 할 수도 있음. 
-```bash 
+```bash
 $ ssh-copy-id jmjeong@nipa5.gpu.testdns.com
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/jamin/.ssh/id_rsa.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
@@ -58,7 +58,7 @@ The key's randomart image is:
 * 해당 키 파일은 ~/.ssh/id_rsa와 ~/.ssh/id_rsa.pub에 생성됨.
 * 해당 키 파일이 생성되는 것을 확인해야 함.
 * 아래 부분에서 가급적 암호를 넣어서 사용해야 키를 분실 했을 때 안전함.
-```bash 
+```bash
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
 ```
@@ -124,7 +124,7 @@ $ nvidia-smi
 ## lshw
 * 해당 머신의 하드웨어 스펙을 볼수 있다. 
 * 가급적 less를 같이 사용하여 결과를 편하게 볼 수 있게 하자.
-```bash 
+```bash
 $ lshw | less
 ```
 
@@ -180,7 +180,7 @@ $ git status | grep delete | awk '{print "git chekcout "$2 }' | bash
 * -v 옵션을 이용하면 특정 단어를 포함한 열을 제외하고 출력
 * -r 옵션을 이용하면 해당 폴더의 모든 파일에서 특정 단어를 포함한 문자열을 반환함
 
-```bash 
+```bash
 $ cat test.txt
 testtest
 hello world !!
@@ -198,7 +198,7 @@ $ grep -r "hello" ./
 ## less
 * 출력 결과나 파일 리스트를 vi의 커맨드 모드로 볼 수 있음
 * 나올때는 q를 입력, / 를 통해 검색.
-```bash 
+```bash
 $ cat test.txt | less
 testtest
 hello world !!
@@ -207,13 +207,13 @@ testtest
 
 ## find
 * 해당 파일이름을 해당 폴더에서 찾아서 위치를 알려줌
-```bash 
+```bash
 $ find ./ -name "hello.py"
 ```
 
 ## which
 * 사용하고 있는 명령의 실행 파일 위치를 알려줌
-```bash 
+```bash
 $ witch python 
 /opt/miniconda3/bin/python
 ```
@@ -244,7 +244,7 @@ $ kill -9 1639
 * history 명령어를 써도 좋지만 가급적 ctrl + r 을 이용하여 이전 명령어 검색을 해서 이용하자
 * [fzf](https://github.com/junegunn/fzf) 와 함께 ctrl + r 을 이용하면 더욱 편하다 
 ### 설치
-```bash 
+```bash
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
@@ -296,7 +296,7 @@ $ tail -10f test.log
 
 ## background run
 - 두가지 방법이 존재함.
-```bash 
+```bash
 ## 1. 명령어 시작부터 background 실행. &를 붙여 줌. 
 $ bash run.sh & 
 ## 2. 동작 하고 있는 중간에 ctrl + z 후에 bg 명령어
@@ -307,7 +307,7 @@ $ bg
 ```
 ## foreground run
 - background로 동작하던 것을 foreground로 가져옴.
-```bash 
+```bash
 ## 명령어 시작부터 background 실행. &를 붙여 줌. 
 $ bash run.sh & 
 $ fg 
@@ -315,6 +315,6 @@ $ fg
 
 # ncdu
 - 폴더 내부의 파일들의 용량을 쉽게 확인할 수 있고 파일 삭제 기능이 있어 용량 관리하기에 용이하다
-```bash 
+```bash
 $ ncdu 
 ```

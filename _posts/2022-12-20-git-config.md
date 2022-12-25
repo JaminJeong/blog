@@ -22,7 +22,7 @@ $ cat .git/config
 	merge = refs/heads/master
 ```
 - git 주소를 변경하고 싶거나 ssh 로 바꾸고 싶을 때 url 부분을 수정해 주면 된다
-```bash 
+```bash
  - url = https://github.com/NVlabs/stylegan2
  + url = git@github.com:NVlabs/stylegan2.git
 ```

@@ -80,7 +80,7 @@ docker pull tensorflow/tensorflow:2.7.3-gpu-jupyter
 FROM nvidia/cuda${ARCH:+-$ARCH}:${CUDA}.1-base-ubuntu${UBUNTU_VERSION} as base
 ```
 - 텐서플로우가 필요하면 아래와 유사하게 베이스를 가져 가면 된다.
-```bash 
+```bash
 FROM tensorflow/tensorflow:2.7.3-gpu
 ```
 
@@ -94,6 +94,6 @@ docker pull pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
 docker pull pytorch/pytorch:1.8.1-cuda10.2-cudnn7-runtime
 ```
 
-```bash 
+```bash
 FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
 ```

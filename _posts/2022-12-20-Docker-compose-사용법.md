@@ -29,7 +29,7 @@ $ docker run -it -p 8080:80 --rm -v $(pwd):/usr/share/nginx/html/ nginx
 --link 옵션을 주어서 django-sample 컨테이너에게 db라는 이름으로 postgres 컨테이너의 존재를 알린 것이다.
 {연결할 컨테이너 이름}:{해당 컨테이너에서 참고할 이름}
 - 역시나 verbose하다.
-```bash 
+```bash
 docker run --rm -d --name postgres \
   -e POSTGRES_DB=djangosample \
   -e POSTGRES_USER=sampleuser \
@@ -48,7 +48,7 @@ docker run -d --rm \
 django2의 경우 해당 네트워크 내에 존재하지 않는 컨테이너이기 때문에 --link로 연결해도 통신할 수 없게 된다.
  
 너무 verbose하다...
-```bash 
+```bash
 // network 생성
 docker network create --driver bridge web-service
 
@@ -175,7 +175,7 @@ jmjeong_test   /bin/bash   Up      0.0.0.0:9212->9211/tcp,:::9212->9211/tcp
 ```
 
 ## docker-compose 명령어
-```bash 
+```bash
 docker-compose up -d // 도커 백그라운드 실행
 docker-compose up --force-recreate // 도커 컨테이너 새로 만들기
 docker-compose up --build // 도커 이미지 빌드 후 compose up
@@ -212,7 +212,7 @@ docker-compose run nginx bash
 - 이미지를 자체 빌드 후 사용할 경우 build를 이용할 경우에 사용합니다. 이미지 빌드를 위한 dockerfile이 필요하니까 지정해주면 됩니다.
 - 자체 빌드니까 image 속성 대신 사용합니다.
 - docker-compose build를 통해서 빌드한 후 docker-compose up해주면 된다.
-```bash 
+```bash
 services:
   django:
     build:

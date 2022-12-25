@@ -19,7 +19,7 @@ $ pip install pyscaffoldext-markdown
 
 ## create projects
   - 기본적으로 우리 모두는 rst 파일에 익숙하지 않기 때문에 --markdown 옵션을 넣어서 생성해야 한다.
-```bash 
+```bash
 $ putup my_project
 
 ## interactive 하게 설정을 조정하면서 생성할 수 있다.
