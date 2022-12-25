@@ -1,5 +1,5 @@
 ---
-title: "docker"
+title: "docker jupyter"
 date: 2022-12-22 00:00:00 -0000
 categories: docker jupyter
 ---
