@@ -75,9 +75,11 @@ $ tree
 ## docs
 - 충분히 관련 문서를 정리 한 다음 배포하도록 하자
 - docs 폴더를 빌드하여 html 파일들을 생성해 준다
+
 ```bash
 $ tox -e docs  # to build your documentation
 ```
+
 ```bash
 ## 문서 파일 생성 전
 $ tree docs
@@ -87,7 +89,7 @@ docs
 ├── authors.md -> ../AUTHORS.md
 ├── changelog.md -> ../CHANGELOG.md
 ├── conf.py
-├── contributing.rst
+├── contributing.rst일
 ├── index.md
 ├── license.rst
 ├── readme.md -> ../README.md
@@ -98,6 +100,7 @@ $ tox -e docs
 .......
   docs: commands succeeded
   congratulations :)
+
 ## 생성 후
 $ tree docs
 docs
