@@ -19,6 +19,7 @@ Python의 경우 필요하다고 판단되는 도구들을 정리해 봤습니�
  * pip install pre-commit
  * pre-commit-config.yaml 파일 생성
 
+
 ```yaml
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
@@ -71,7 +72,9 @@ repos:
         args: [--in-place]
 ```
 
+
 ## pre-commit-config.yaml  파일 구조
+
 
 ```yaml
 -   github 저장소 위치
@@ -88,7 +91,9 @@ repos:
         args: [--in-place]
 ```
 
+
 ## 설정
+
 ```bash
 ## 샘플 파일 생성
 $ pre-commit sample-config > .pre-commit-config.yaml
@@ -104,7 +109,9 @@ $ pre-commit run
 $ pre-commit install
 ```
 
+
 ## 사용법
+
 ```bash
 ## 테스트 파일 생성
 $ cat test.py
@@ -141,3 +148,4 @@ flynt....................................................................Passed
 isort....................................................................Passed
 autoflake................................................................Passed
 ```
+

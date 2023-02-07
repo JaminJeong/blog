@@ -22,6 +22,7 @@ categories: python ci/cd gitlab
 
 - Linting은 잠재적 오류에 대한 코드를 분석하는 프로그램을 실행하는 프로세스
 
+
 ```yaml
 # This file is a template, and might need editing before it works on your project.
 # To contribute improvements to CI/CD templates, please follow the Development guide at:
@@ -70,6 +71,7 @@ deploy-job:      # This job runs in the deploy stage.
     - echo "Application successfully deployed."
 ```
 
+
 # gitlab의 python에 대해 제공하는 기본설정
 - venv를 이용하여 가상환경에서 필요한 패키지를 설치한다
   - tox, flake8, sphinx 등.. 각 설명은 주석에 달도록함
@@ -81,6 +83,7 @@ deploy-job:      # This job runs in the deploy stage.
 - **결론적으로 우리는 pyscaffold와 docker 환경을 사용하기 때문에 해당 방식은 사용하지 않는다. 하지만 배울점이 많다.**
 - 해당 스크립트는 셋업 상태에 따라 실행되지 않는 문제도 있다.
 - [gitlab-ci default python file](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Python.gitlab-ci.yml)
+
 
 ```yaml
 # To contribute improvements to CI/CD templates, please follow the Development guide at:
@@ -141,6 +144,7 @@ pages: # 문서들을 웹 형태로 빌드 배포한다. 하지만 동작하진 
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 ```
+
 
 # pyscaffold를 적용한 gitlab ci/cd 사용
 - to be update...

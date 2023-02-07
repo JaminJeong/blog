@@ -12,6 +12,7 @@ categories: Pyconcrete
 - Github : [pyconcrete](https://github.com/Falldog/pyconcrete)
 
 # Dockerfile
+
 ```bash
 # torch 기본 이미지에서 시작
 FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-devel
@@ -44,38 +45,49 @@ RUN find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf
 RUN rm -rf /workspace/.git* Dockerfile
 ```
 
+
 # Install
+
 ```bash
 $ PYCONCRETE_PASSPHRASE=<your passphrase here> pip install pyconcrete
 $ pip install pyconcrete --egg --install-option="--passphrase=<your passphrase>"
 ```
 
+
 # Usage
 - .py 파일들을 .pye 파일로 변환한다
+
 ```bash
 $ pyconcrete-admin.py compile --source=<your py script>  --pye
 $ pyconcrete-admin.py compile --source=<your py module dir> --pye
 ```
 
+
 ### 일부분 암호화
   - pyconcrete 다운로드 후 setup.py 설치
+
 ```bash
 $ python setup.py install \
   --install-lib=<your project path> \
   --install-scripts=<where you want to execute pyconcrete-admin.py and pyconcrete(exe)>
 ```
+
   - main 스크립트에 pyconcrete를 import함
+
 ```bash
 main.py       # import pyconcrete and your lib
 pyconcrete/*  # put pyconcrete lib in project root, keep it as original files
 src/*.pye     # your libs
 ```
 
+
 - 실행
+
 ```bash
 $ pyconcrete main.pye
 src/*.pye  # your libs
 ```
+
 
 # Release
 - 배포시 기존의 .py파일을 삭제하고 git으로 관리 되고 있다면 .git 파일을 삭제하여 소스 파일에 대한 정보를 완전히 삭제 해 준다

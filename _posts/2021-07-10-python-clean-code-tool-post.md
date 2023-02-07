@@ -43,12 +43,15 @@ categories: python cleancode
 ### crontab
  * 새벽 4시 마다 동작함.
 
+
 ```bash
 0 4 * * * bash /your/git/folder/clean_code.sh /your/git/folder/
 ```
 
+
 ### 자동 shell code
  * clean_code.sh
+
 
 ```bash
 target_dir="$1"
@@ -87,3 +90,4 @@ if [ -d "${target_dir}" ]; then
 fi
 
 ```
+

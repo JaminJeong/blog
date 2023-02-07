@@ -20,15 +20,18 @@ categories: docker docker-compose
 이 모든 과정은 이해할 수는 있지만 살짝 verbose하다. compose를 사용하면 이런 번거로운 cli를 작성하지 않고, 
 docker-compose.yml을 활용할 수 있다.
 
+
 ```bash
 $ docker run -it -p 8080:80 --rm -v $(pwd):/usr/share/nginx/html/ nginx
 ```
+
 2. 컨테이너 간 연결이 쉬워진다.
  
 아래는 postgres와 django-sample이란 컨테이너를 연결한 것이다.
 --link 옵션을 주어서 django-sample 컨테이너에게 db라는 이름으로 postgres 컨테이너의 존재를 알린 것이다.
 {연결할 컨테이너 이름}:{해당 컨테이너에서 참고할 이름}
 - 역시나 verbose하다.
+
 ```bash
 docker run --rm -d --name postgres \
   -e POSTGRES_DB=djangosample \
@@ -42,12 +45,14 @@ docker run -d --rm \
   --link postgres:db \
   django-sample
 ```
+
 3. 특정 컨테이너끼리만 통신할 수 있는 가상 네트워크 환경을 관리하는데 너무 명령어가 길어진다.
  
 --network 옵션을 통해서 특정 네트워트 내에만 존재하는 컨테이너끼리만 통신할 수 있도록 만들어주었다.
 django2의 경우 해당 네트워크 내에 존재하지 않는 컨테이너이기 때문에 --link로 연결해도 통신할 수 없게 된다.
  
 너무 verbose하다...
+
 ```bash
 // network 생성
 docker network create --driver bridge web-service
@@ -74,8 +79,10 @@ docker run -d --rm --name django2 \
   django-sample
 ```
 
+
 ## docker-compose를 구성하기 위한 yml 파일을 만들자. 
 - 여기서 depends_on 로 다른 서비스에 대한 의존성을 만들 수 있음에 주목하자.
+
 ```bash
 version: '3'
 
@@ -108,8 +115,10 @@ services:
       - 8000:8000
 ```
 
+
 ## tensorflow를 이용한 docker run vs docker-compose
 ### before
+
 ```bash
 ## docker run [OPTION] IMAGE[:TAG] [COMMAND]
 $ docker run -it \
@@ -126,9 +135,11 @@ $ docker run -it \
         /bin/bash                                # 시작하면서 동작할 명령을 설정할 수 있음.
 ```
 
+
 ### after
 - docker-compose.yml 파일을 아래처럼 작성하자
 - stdin_open: true와 tty: true는 도커 컨포즈의 철학과는 다를 수 있지만 필요하다면 사용하자.
+
 ```yaml
 version: "3.7"                              # version 정보
 
@@ -155,8 +166,10 @@ services:
               capabilities: [gpu, utility]
 ```
 
+
 ## container 동작
 - 이 명령어를 이용하여 주고 도커를 실행하고 끈다고 생각하자
+
 ```bash
 ## docker run처럼 동작
 $ docker-compose up 
@@ -165,7 +178,9 @@ $ docker-compose up -d # detach 로 동작
 $ docker-compose down
 ```
 
+
 ## container 상태보기
+
 ```bash
 $ docker-compose ps
 $ docker-compose ps -a
@@ -174,12 +189,16 @@ $ docker-compose ps -a
 jmjeong_test   /bin/bash   Up      0.0.0.0:9212->9211/tcp,:::9212->9211/tcp
 ```
 
+
 ## docker-compose 명령어
+
 ```bash
 docker-compose up -d // 도커 백그라운드 실행
 docker-compose up --force-recreate // 도커 컨테이너 새로 만들기
 docker-compose up --build // 도커 이미지 빌드 후 compose up
 ```
+
+
 
 ```bash
 docker-compose start // 정지한 컨테이너를 재개
@@ -208,10 +227,12 @@ docker-compose run [service] [command] // 이미 docker-compose 가동 중인 �
 docker-compose run nginx bash
 ```
 
+
 ## docker-compose build
 - 이미지를 자체 빌드 후 사용할 경우 build를 이용할 경우에 사용합니다. 이미지 빌드를 위한 dockerfile이 필요하니까 지정해주면 됩니다.
 - 자체 빌드니까 image 속성 대신 사용합니다.
 - docker-compose build를 통해서 빌드한 후 docker-compose up해주면 된다.
+
 ```bash
 services:
   django:
@@ -221,6 +242,7 @@ services:
   postgres:
   	image: ....
 ```
+
 
 # 우리가 할 수 있는 구성
 - 학습 환경, tensorboard, mlflow, 등 다양한 환경과 어울어져 사용할 수 있음.

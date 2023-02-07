@@ -39,9 +39,11 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 * 현재 folder tree
 
 ```
+
 .
 ├── project       <<<<<<
 ```
+
 
 --------------------------------
 
@@ -65,6 +67,7 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 > <details><summary>    [모든 GPU 사용시]    </summary>
 > 
 > ```
+
 > docker run -it \
 >         --gpus all \                             # GPU 설정
 >         --name {container_name} \                     # container 이름 설정
@@ -80,12 +83,14 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 >                                                    ~ -jupyter는 굳이 필요는 없음 (재설치 경우 존재)
 > 
 > ```
+
 > 
 > </details>
 > 
 > <details><summary>    [특정 GPU 사용시]    </summary>
 > 
 > ```
+
 > docker run -it \
 >         --gpus device=1 \                             # 1번 GPU 설정 (0,1 ... 등 여러개 가능)
 >         --name {container_name} \                     # container 이름 설정
@@ -101,6 +106,7 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 >                                                    ~ -jupyter는 굳이 필요는 없음 (재설치 경우 존재)
 > 
 > ```
+
 > 
 > </details>
 > 
@@ -111,10 +117,12 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 * 현재 folder tree
 
 ```
+
 .
 ├── project
 │   ├── docker_run.sh                <<<<<<
 ```
+
 
 --------------------------------
 
@@ -129,6 +137,7 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 * 현재 folder tree
 
 ```
+
 .
 ├── project
 │   ├── data
@@ -139,6 +148,7 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
         ├── common
         └── current -> @@@@
 ```
+
 
 --------------------------------
 
@@ -163,15 +173,18 @@ Terminal (CMD) 를 실행해서 Node/NIPA에 접속합니다.
 * `i` 를 누르면 맨 밑 하단에 `--insert--` 로 바뀌어야 sh 작성이 가능합니다.
 
 ```
+
 #export CUDA_VISIBLE_DEVICES=1
 jupyter-notebook -—notebook-dir=/root/project -—ip 0.0.0.0 -—allow-root —-port @@@@@@ # 설정한 포트
 ```
+
 
 * 작성이 완료되었으면 `esc` 후 `:wq` 
 
 * 현재 folder tree
 
 ```
+
 .
 ├── project
 │   ├── data
@@ -184,6 +197,7 @@ jupyter-notebook -—notebook-dir=/root/project -—ip 0.0.0.0 -—allow-root �
         └── current -> @@@@
 
 ```
+
 
 --------------------------------
 
@@ -226,9 +240,11 @@ jupyter-notebook -—notebook-dir=/root/project -—ip 0.0.0.0 -—allow-root �
 #### 1. Terminal 혹은 Jupyter Notebook ipynb 에서 실행
 
 ```
+
 from tensorflow.python.client import device_lib
 device_lib.list_local_devices()
 ```
+
 
 #### 2. Docker 내에서 Terminal (CMD) 실행
 
@@ -278,8 +294,10 @@ device_lib.list_local_devices()
 >`vi lab.sh`
 >
 >```
+
 >jupyter lab --allow-root --ip 0.0.0.0 --port @@@@@ # jupyter notebook에서 쓰인 port
 >```
+
 >
 >`esc`
 >

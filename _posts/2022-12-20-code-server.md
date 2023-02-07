@@ -18,6 +18,7 @@ categories: IDE
 
 ## 사용법
 
+
 ```bash
 mkdir ~/utils; cd ~/utils
 wget https://github.com/coder/code-server/releases/download/v4.4.0/code-server-4.4.0-linux-amd64.tar.gz
@@ -29,4 +30,5 @@ cd code-server-4.4.0-linux-amd64
 # port number, password
 vi ~/.config/code-server/config.yaml
 ```
+
 * config 파일에서 포트와 ip와 비밀번호 등을 수정하여 사용한다
